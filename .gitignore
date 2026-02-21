@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# ML model weights & checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.tflite
+*.pb
+*.h5
+*.keras
+runs/
+checkpoints/
+wandb/
+mlruns/
+lightning_logs/
+
+# Data & outputs
+*.json
+*.jsonl
+*.csv
+*.parquet
+*.arrow
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.hdf5
+*.h5
+data/
+datasets/
+tmp_*/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env & secrets
+.env
+.env.*
+*.key

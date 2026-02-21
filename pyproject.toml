@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mltools"
+version = "0.1.0"
+description = "ML tooling for Label Studio annotation export and COCO integration"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "label-studio-sdk",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ultralytics",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mltools"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::pydantic.warnings.PydanticDeprecatedSince20",
+    "ignore::DeprecationWarning:pytz",
+]
