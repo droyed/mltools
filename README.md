@@ -60,7 +60,7 @@ import mltools.ls_exporter as ls_exporter
 from mltools.ls_exporter import run
 
 model = YOLO("yolo11n-seg.pt")
-results = model(image_paths, imgsz=1280, conf=0.05)
+results = model(image_paths)
 
 ls_exporter.export_annotations(results, "output.json")
 
